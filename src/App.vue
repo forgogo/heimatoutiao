@@ -8,17 +8,6 @@
 <script>
 export default {
   name: "app",
-  data() {
-    return {
-      msg: "halo"
-    };
-  },
-
-  methods: {
-    btn() {
-      this.$toast.fail(this.msg);
-    }
-  }
 };
 </script>
 

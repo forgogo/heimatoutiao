@@ -5,6 +5,9 @@ import 'vant/lib/index.css';
 //引入默认样式
 import '@/style/reset.css';
 
+//引入路由模块
+import router from '@/router/index.js'
+
 //引入组件
 import { Toast } from 'vant'
 import { Button } from 'vant'
@@ -16,5 +19,6 @@ Vue.config.productionTip = false
 Vue.use(Toast);
 Vue.use(Button);
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
